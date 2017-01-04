@@ -194,7 +194,7 @@ public class SupportedTypes {
         return new CodeGenInfo(typeMap.get(TYPE_KEY_LONG_ARRAY));
       }
 
-      if (arrayOf.toString().equals(String.class.getName())) {
+      if (arrayOf.contentEquals(String.class.getName())) {
         return new CodeGenInfo(typeMap.get(TYPE_KEY_STRING_ARRAY));
       }
 
