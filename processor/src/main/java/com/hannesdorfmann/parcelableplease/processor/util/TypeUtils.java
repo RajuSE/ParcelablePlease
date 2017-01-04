@@ -24,7 +24,7 @@ public class TypeUtils {
    * Checks if a TypeMirror equals a class
    */
   public static boolean isTypeOf(TypeMirror type, Class<?> clazz) {
-    return type.toString().equals(clazz.getCanonicalName());
+    return type.contentEquals(clazz.getCanonicalName());
   }
 
   /**
